@@ -4,6 +4,26 @@
     <div class="container-fluid row debug4 row position-relative ">
         <div class="ms_opacita position-absolute"></div>
 
+        <!-- Icona Demos -->
+        <div class="ms_demos position-absolute">
+            <div class="iconcina_barra_uno position-absolute"></div>
+            <div class="iconcina_barra_due position-absolute"></div>
+            <div class="iconcina_demos position-absolute">
+                <i class="fa-brands fa-atlassian position-absolute fa-flip-horizontal"></i>
+            </div>
+            <div class="ms_demos_testo position-absolute">
+                Demos
+            </div>
+        </div>
+
+        <!-- icona On Sale -->
+        <div class="ms_onSale position-absolute">
+            <div class="iconcina_dollaro position-absolute">$</div>
+            <div class="ms_onSale_cifra position-absolute">39</div>
+            <div class="ms_onSale_testo position-absolute">On Sale</div>
+        </div>        
+
+
         <div class="debug2 col-4 position-absolute">
             <h1>
                 Unlock Your Online Growth Potential
@@ -17,31 +37,33 @@
             </button>
         </div>
 
-        <div class="debug3 col-3 position-absolute pt-5">
-            <div class="m-auto ms_sfera_account"></div>
-            <div>
-                <p>Richard Madsen</p>
-                <p class="ms_testo_grigio">Marketing Consultant Expert</p>
-                <p class="ms_numero"><i class="fa-solid fa-phone mx-1"></i> (555) 802-1234</p>
-            </div>
-            <div class="m-2">
-                <div class="proveform ms_width_285 m-2">
-                    <img src="../assets/images/image.png" class="sbirulino">
-                    <input type="email" class="form-control ms_form" id="exampleFormControlInput1" placeholder="Your Name*">
-                </div>
-                <div class="m-2 ms_width_285">
-                    <input type="email" class="form-control ms_form" id="exampleFormControlInput1" placeholder="Your Email*">
-                </div>
-                <div class="m-2 ms_width_285">
-                    <input type="email" class="form-control ms_form" id="exampleFormControlInput1" placeholder="Your Phone Number*">
-                </div>
-                <div class="m-2 ms_width_285">
-                    <a class="btn btn-primary ms_bottone_secondo" href="#" role="button" disabled>Get a Callback</a>
-                </div>
+        <div class="col-3 pt-5">
+            <div class="debug3 position-absolute">
+                <div class="ms_sfera_account"></div>
                 <div>
-                    <p class="ms_testo_piccolo">By submitting my data i agree to be contacted</p>
+                    <p class="m-2">Richard Madsen</p>
+                    <p class="ms_testo_grigio">Marketing Consultant Expert</p>
+                    <p class="ms_numero"><i class="fa-solid fa-phone mx-1"></i> (555) 802-1234</p>
                 </div>
-            </div>            
+                <div class="m-2">
+                    <div class="proveform ms_width_285 m-3">
+                        <img src="../assets/images/image.png" class="sbirulino">
+                        <input type="email" class="form-control ms_form" id="exampleFormControlInput1" placeholder="Your Name*">
+                    </div>
+                    <div class="m-3 ms_width_285">
+                        <input type="email" class="form-control ms_form" id="exampleFormControlInput1" placeholder="Your Email*">
+                    </div>
+                    <div class="m-3 ms_width_285">
+                        <input type="email" class="form-control ms_form" id="exampleFormControlInput1" placeholder="Your Phone Number*">
+                    </div>
+                    <div class="m-3 ms_width_285">
+                        <a class="btn btn-primary ms_bottone_secondo" href="#" role="button" disabled>Get a Callback</a>
+                    </div>
+                    <div>
+                        <p class="ms_testo_piccolo m-4">By submitting my data i agree to be contacted</p>
+                    </div>
+                </div>            
+            </div>
         </div>
 
     </div>
@@ -61,7 +83,7 @@ export default {
 .debug2 {
     height: 250px;
     top: 90px;
-    left: 225px;
+    left: 18vw;
 
     h1, p {
         color: white;
@@ -80,12 +102,13 @@ export default {
 }
 
 .debug3 {
-    height: 450px;
+    height: 425px;
     bottom: -20px;
-    right: 250px;
+    right: 23vw;
     text-align: center;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     .ms_testo_grigio{
         color: grey;
@@ -99,6 +122,51 @@ export default {
 
     .ms_testo_piccolo{
         font-size: 9px;
+        color: grey;
+    }
+
+    .proveform {
+    position: relative;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 13px;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+        font-size: 13px;
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+        font-size: 13px;
+    }
+
+    .sbirulino {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+    }
+
+    .ms_sfera_account {
+        background-image: url(../assets/images/marketing-consultant-expert.jpg);
+        background-size: cover;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        margin: auto;
+        margin-top: 20px;
+
+    }
+
+    div .ms_bottone_secondo{
+        color: white;
+        background-color: #f76210;
+        border: none;
+        width: 285px;
+    }
+
+    .ms_width_285{
+        width: 285px;
     }
 }
 
@@ -116,36 +184,115 @@ export default {
         top: 0;
         left: 0;
     }
+
+    .ms_demos{
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        top: 35px;
+        right: 15px;
+        border-radius: 7px;
+
+        .iconcina_demos{
+            width: 20px;
+            height: 15px;
+            background-color: #33475b;
+            top: 17px;
+            left: 16px;
+            border-radius: 3px;
+
+            .fa-atlassian{
+                font-size: 8px;
+                color: white;
+                left: 6px;
+                top: 3px;
+            }
+        }
+
+        .iconcina_barra_uno{
+            width: 16px;
+            height: 2px;
+            background-color: #33475b;
+            top: 14px;
+            left: 18px;
+
+        }
+
+        .iconcina_barra_due{
+            width: 12px;
+            height: 2px;
+            background-color: #33475b;
+            top:11px;
+            left: 20px;
+
+        }
+
+        .ms_demos_testo{
+            font-size: 9px;
+            bottom: 4px;
+            left: 11px;
+        }
+    }
+
+    .ms_onSale{
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        top: 90px;
+        right: 15px;
+        border-radius: 7px;  
+        
+        .iconcina_dollaro{
+            color: #65bc7b;
+            font-size: 12px;
+            top: 4px;
+            left: 7px;
+        }
+
+        .ms_onSale_cifra{
+            color: #65bc7b;
+            top: 2px;
+            left: 14px;
+            font-size: 22px;
+        }
+
+        .ms_onSale_testo{
+            font-size: 9px;
+            bottom: 6px;
+            left: 11px;
+        }
+
+    }
 }
 
-.proveform {
-    position: relative;
-}
-.sbirulino {
-    position: absolute;
-    right: 12px;
-    top: 12px;
-}
+// .proveform {
+//     position: relative;
+// }
+// .sbirulino {
+//     position: absolute;
+//     right: 12px;
+//     top: 12px;
+// }
 
-.ms_sfera_account {
-    background-image: url(../assets/images/marketing-consultant-expert.jpg);
-    background-size: cover;
-    height: 75px;
-    width: 75px;
-    border-radius: 50%;
+// .ms_sfera_account {
+//     background-image: url(../assets/images/marketing-consultant-expert.jpg);
+//     background-size: cover;
+//     height: 75px;
+//     width: 75px;
+//     border-radius: 50%;
     
-}
+// }
 
-div .ms_bottone_secondo{
-    color: white;
-    background-color: #f76210;
-    border: none;
-    width: 285px;
-}
+// div .ms_bottone_secondo{
+//     color: white;
+//     background-color: #f76210;
+//     border: none;
+//     width: 285px;
+// }
 
-.ms_width_285{
-    width: 285px;
-}
+// .ms_width_285{
+//     width: 285px;
+// }
 
 .debug {
     background-color: lightblue;
