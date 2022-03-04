@@ -86,11 +86,11 @@ header{
 
     .ms_bottone_arancione{
         color: #f76210;
-        background-color: rgba(247,98,16, 0.2);
+        background-color: rgba(247,98,16, 0.1);
         border: none;
-        padding-left: 20mx;
-        padding-right: 20mx;
-        font-size: 14mx;
+        padding: 9px 25px;
+        font-size: 13px;
+        border-radius: 10px;
 
 
         &:hover{
