@@ -5,13 +5,11 @@
             <div class="col-4">
                 <div class="mt-5">
                     <div class="ms_tag m-2">
-                        <div class="ms_iconablu position-relative">
+                        <div class="ms_iconagialla position-relative">
                             <div class="quarter_uno position-absolute"></div>
                             <div class="quarter_due position-absolute"></div>
                             <div class="quarter_tre position-absolute"></div>
                             <div class="quarter_quattro position-absolute"></div>
-                            <div class="quarter"></div>
-
                         </div>
                         <p class="ms-1">Investors In People</p>
                     </div>
@@ -43,7 +41,7 @@ export default {
 }
 </script>
 
-<style scooped lang="scss">
+<style scoped lang="scss">
 @import '../../style/generali.scss';
 
 main {
@@ -77,11 +75,11 @@ main {
         display: inline-block;
         }
 
-        .ms_iconablu {
+        .ms_iconagialla {
             display: inline-block;
             width: 25px;
             height: 25px;
-            background-color: #0064fe;
+            background-color: #f8cc23;
             border-radius: 50%;
             vertical-align: middle;
 

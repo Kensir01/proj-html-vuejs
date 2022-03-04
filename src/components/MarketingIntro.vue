@@ -77,7 +77,7 @@ export default {
 }
 </script>
 
-<style scooped lang="scss">
+<style scoped lang="scss">
 @import '../style/generali.scss';
 
 .ms_container_sinistra {
@@ -155,7 +155,6 @@ export default {
         border-radius: 50%;
         margin: auto;
         margin-top: 20px;
-
     }
 
     div .ms_bottone_secondo{

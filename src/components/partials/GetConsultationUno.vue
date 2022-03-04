@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style scooped lang="scss">
+<style scoped lang="scss">
 @import '../../style/generali.scss';
 
 main {

@@ -3,22 +3,22 @@
     <div class="container ms_container">
         <div class="row justify-content-center">
             <div class="col-4">
-                <img src="../../assets/svg/img1.svg" alt="" class="ms_svg">
+                <img src="../../assets/svg/img3.svg" alt="" class="ms_svg">
             </div>
             <div class="col-4">
                 <div class="mt-5">
                     <div class="ms_tag m-2">
-                        <div class="ms_iconablu position-relative">
+                        <div class="ms_iconaverde position-relative">
                             <div class="white_pebble_uno position-absolute"></div>
                             <div class="white_pebble_due position-absolute"></div>
                             <div class="white_pebble_tre position-absolute"></div>
                             <div class="white_pebble_quattro position-absolute"></div>
 
                         </div>
-                        <p class="ms-1">Business Growth</p>
+                        <p class="ms-1">Social Media Analysis</p>
                     </div>
                     <div class="ms_titolo m-2">
-                        <h3>Increase Brand Awareness</h3>
+                        <h3>Harness Your Social Proof</h3>
                     </div>
                     <div class="ms_sottotitolo mt-4 ms-2">
                         <p>
@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style scooped lang="scss">
+<style scoped lang="scss">
 @import '../../style/generali.scss';
 
 main {
@@ -75,11 +75,11 @@ main {
         display: inline-block;
         }
 
-        .ms_iconablu {
+        .ms_iconaverde {
             display: inline-block;
             width: 25px;
             height: 25px;
-            background-color: #0064fe;
+            background-color: #3bc77b;
             border-radius: 50%;
             vertical-align: middle;
 
@@ -127,7 +127,7 @@ main {
 
     div .ms_titolo h3 {
         font-weight: 600;
-        max-width: 20vw;
+        max-width: 18vw;
 
     }
 
