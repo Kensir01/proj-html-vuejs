@@ -1,7 +1,7 @@
 <template>
 <main class="main_contaner">
 
-    <div class="container-fluid row debug4 row position-relative ">
+    <div class="container-fluid row ms_container_grande row position-relative ">
         <div class="ms_opacita position-absolute"></div>
 
         <!-- Icona Demos -->
@@ -24,7 +24,7 @@
         </div>        
 
 
-        <div class="debug2 col-4 position-absolute">
+        <div class="ms_container_sinistra col-4 position-absolute">
             <h1>
                 Unlock Your Online Growth Potential
             </h1>
@@ -38,7 +38,7 @@
         </div>
 
         <div class="col-3 pt-5">
-            <div class="debug3 position-absolute">
+            <div class="ms_container_destra position-absolute">
                 <div class="ms_sfera_account"></div>
                 <div>
                     <p class="m-2">Richard Madsen</p>
@@ -46,7 +46,7 @@
                     <p class="ms_numero"><i class="fa-solid fa-phone mx-1"></i> (555) 802-1234</p>
                 </div>
                 <div class="m-2">
-                    <div class="proveform ms_width_285 m-3">
+                    <div class="ms_form ms_width_285 m-3">
                         <img src="../assets/images/image.png" class="sbirulino">
                         <input type="email" class="form-control ms_form" id="exampleFormControlInput1" placeholder="Your Name*">
                     </div>
@@ -80,7 +80,7 @@ export default {
 <style scooped lang="scss">
 @import '../style/generali.scss';
 
-.debug2 {
+.ms_container_sinistra {
     height: 250px;
     top: 90px;
     left: 18vw;
@@ -101,14 +101,14 @@ export default {
     }
 }
 
-.debug3 {
+.ms_container_destra {
     height: 425px;
     bottom: -20px;
     right: 23vw;
     text-align: center;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 
     .ms_testo_grigio{
         color: grey;
@@ -125,7 +125,7 @@ export default {
         color: grey;
     }
 
-    .proveform {
+    .ms_form {
     position: relative;
     }
 
@@ -163,6 +163,8 @@ export default {
         background-color: #f76210;
         border: none;
         width: 285px;
+        border-radius: 10px;
+
     }
 
     .ms_width_285{
@@ -170,7 +172,7 @@ export default {
     }
 }
 
-.debug4 {
+.ms_container_grande {
     height: 500px;
     background-image: url(../assets/images/marketing-intro.jpg);
     background-size: cover;
@@ -265,41 +267,8 @@ export default {
     }
 }
 
-// .proveform {
-//     position: relative;
-// }
-// .sbirulino {
-//     position: absolute;
-//     right: 12px;
-//     top: 12px;
-// }
-
-// .ms_sfera_account {
-//     background-image: url(../assets/images/marketing-consultant-expert.jpg);
-//     background-size: cover;
-//     height: 75px;
-//     width: 75px;
-//     border-radius: 50%;
-    
-// }
-
-// div .ms_bottone_secondo{
-//     color: white;
-//     background-color: #f76210;
-//     border: none;
-//     width: 285px;
-// }
-
-// .ms_width_285{
-//     width: 285px;
-// }
-
-.debug {
-    background-color: lightblue;
-    height: 250px;
-}
 .main_contaner {
-    height: 800px;
+    height: 555px;
     -ms-overflow-style: none; 
     scrollbar-width: none; 
     overflow-y: scroll;
