@@ -1,7 +1,7 @@
 <template>
 <main class="main_contaner">
 
-    <div class="container-fluid row ms_container_grande row position-relative ">
+    <div class="container-fluid row ms_container_grande position-relative ">
         <div class="ms_opacita position-absolute"></div>
 
         <!-- Icona Demos -->
@@ -82,6 +82,7 @@ export default {
 
 .ms_container_sinistra {
     height: 250px;
+    width: 400px;
     top: 90px;
     left: 18vw;
 

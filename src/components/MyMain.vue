@@ -5,6 +5,9 @@
         <AffiliatedBrands />
         <LeadingOrganisations />
         <WorkWithUs />
+        <MyTestimonial />
+        <MarketingResources />
+        <MakeThings />
     </main>
 </template>
 
@@ -14,7 +17,9 @@ import GetConsultation from './GetConsultation.vue'
 import AffiliatedBrands from './AffiliatedBrands.vue'
 import LeadingOrganisations from './LeadingOrganisations.vue'
 import WorkWithUs from './WorkWithUs.vue'
-
+import MyTestimonial from './MyTestimonial.vue'
+import MarketingResources from './MarketingResources.vue'
+import MakeThings from './MakeThings.vue'
 
 
 
@@ -26,6 +31,9 @@ export default {
     AffiliatedBrands,
     LeadingOrganisations,
     WorkWithUs,
+    MyTestimonial,
+    MarketingResources,
+    MakeThings,
   }
 }
 </script>

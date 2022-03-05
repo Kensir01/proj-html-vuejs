@@ -374,11 +374,11 @@ main {
         }
 
         .ms_bottone_secondo{
-        color: white;
-        background-color: #f76210;
-        border: 1px solid #f76210;
-        width: 180px;
-        border-radius: 10px;
+            color: white;
+            background-color: #f76210;
+            border: 1px solid #f76210;
+            width: 180px;
+            border-radius: 10px;
 
             &:hover {
                 background-color: white;
@@ -411,21 +411,21 @@ main {
             width: 50%;
             height: 50%;
             filter: hue-rotate(190deg);
-            margin-left: 50px;
+            margin-left: 4vw;
             opacity: 0.7;
         }
 
         .award_b {
             width: 50%;
             height: 50%;
-            margin-left: 50px;
+            margin-left: 4vw;
         }
         
         .award_c {
             width: 50%;
             height: 50%;
             filter: saturate(3);
-            margin-left: 50px;
+            margin-left: 4vw;
 
         }
 
@@ -433,7 +433,7 @@ main {
             width: 50%;
             height: 50%;
             filter: hue-rotate(210deg);
-            margin-left: 50px;
+            margin-left: 4vw;
 
         }
 
