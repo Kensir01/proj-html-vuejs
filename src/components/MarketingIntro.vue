@@ -163,6 +163,12 @@ export default {
         border: none;
         width: 285px;
         border-radius: 10px;
+        
+        &:hover {
+            background-color: white;
+            color: #f76210;
+            border: 1px solid #f76210;
+        }        
 
     }
 

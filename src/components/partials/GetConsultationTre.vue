@@ -65,6 +65,11 @@ main {
     font-size: 12px;
     font-weight: 400;
 
+        &:hover {
+            background-color: white;
+            color: #f76210;
+            border: 1px solid #f76210;
+        }
     }
 
     div .ms_tag {
