@@ -147,7 +147,7 @@ main {
     div .ms_bottone_secondo{
         color: white;
         background-color: #f76210;
-        border: none;
+        border: 1px solid #f76210;
         width: 285px;
         border-radius: 10px;
 

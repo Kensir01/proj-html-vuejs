@@ -87,7 +87,7 @@ header{
     .ms_bottone_arancione{
         color: #f76210;
         background-color: rgba(247,98,16, 0.1);
-        border: none;
+        border: 1px solid rgba(247,98,16, 0.1);
         padding: 9px 25px;
         font-size: 13px;
         border-radius: 10px;
@@ -95,6 +95,8 @@ header{
 
         &:hover{
             background-color: #f76210;
+            border: 1px solid rgba(247,98,16, 0.1);
+           
         }
     }    
 }
