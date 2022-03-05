@@ -1,6 +1,6 @@
 <template>
 <main>
-    <div class="container-fluid debug1">
+    <div class="container-fluid ms_container">
         <div class="row justify-content-center">
             <div class="col-3 ms_col_sx">
                 <h3>We Boost Our Clients' Bottom Line by Optimizing Their Growth Potential.</h3>
@@ -11,7 +11,9 @@
                 <img src="../assets/images/we-boost-our-clients.jpg" alt="">
             </div>
         </div>
+
         <div class="row justify-content-center">
+
             <div class="col-3 mt-5">
                 <div class="col-12 cont_sx_1">
                     <h5>We Build Relationships</h5>
@@ -24,6 +26,7 @@
             </div>
 
             <div class="col-3 mt-5">
+
                 <div class="col-12 cont_dx_1 clearfix">
                     <div class="contenitore_bordo float-start">
                         <div class="contenitore_iconcina position-absolute">
@@ -39,9 +42,11 @@
                         <h5>Accountability</h5>
                         <p>Curabitur ac leo nunc vestibulum</p>
                     </div>
+
                 </div>
 
                 <div class="col-12 cont_dx_2 clearfix">
+
                     <div class="contenitore_bordo float-start">
                         <div class="contenitore_iconcina position-absolute">
                             <i class="fa-solid fa-plus position-absolute"></i>
@@ -49,24 +54,29 @@
                             <div class="linea2 position-absolute"></div>
                             <div class="linea3 position-absolute"></div>
                             <div class="linea5 position-absolute"></div>
-                        </div>                        
+                        </div>  
+
                     </div>
 
                     <div class="boh float-start">
                         <h5>Transparency</h5>
                         <p>Curabitur ac leo nunc vestibulum</p>
                     </div>
+
                 </div>
 
                 <div class="col-12 cont_dx_3 clearfix">
+
                     <div class="contenitore_bordo float-start">
+
                         <div class="contenitore_iconcina position-absolute">
                             <i class="fa-solid fa-signal position-absolute"></i>
                             <div class="punto position-absolute"></div>
                             <div class="linea2 position-absolute"></div>
                             <div class="linea3 position-absolute"></div>
                             <div class="linea5 position-absolute"></div>
-                        </div>                        
+                        </div>       
+
                     </div>
 
                     <div class="boh float-start">
@@ -78,6 +88,41 @@
 
             </div>
         </div>
+        
+        <div class="row justify-content-center ms_awards pb-5">
+            <div class="col-12">
+                <h5 class="text-center">Awards</h5>
+            </div>
+            <div class="col-2">
+                <div>
+                    <img src="../assets/images/award-a.png" alt="" class="award_a">
+                </div>
+                <p class="sottotitolo text-center">Winner Seo Master MAGT</p>
+                <p class="sottotitolo text-center">Smart Start Award 2017</p>
+            </div>
+            <div class="col-2">
+                <div>
+                    <img src="../assets/images/award-b.png" alt="" class="award_b">
+                </div>
+                <p class="sottotitolo text-center">Top Social Media Agencies</p>
+                <p class="sottotitolo text-center">Next Partner 2018</p>
+            </div>
+            <div class="col-2">
+                <div>
+                    <img src="../assets/images/award-c.png" alt="" class="award_c">
+                </div>
+                <p class="sottotitolo text-center">10 Fastest Growing Abstract</p>
+                <p class="sottotitolo text-center">Solution Providers 2019</p>
+            </div>
+            <div class="col-2">
+                <div>
+                    <img src="../assets/images/award-d.png" alt="" class="award_d">
+                </div>
+                <p class="sottotitolo text-center">National Excellence Agencie</p>
+                <p class="sottotitolo text-center">Award Winner 2020</p>
+            </div>
+        </div>
+
     </div>
 </main>
 </template>
@@ -93,6 +138,7 @@ export default {
 @import '../style/generali.scss';
 
 main {
+
 
     .cont_dx_1 {
         width: 100%;
@@ -311,9 +357,7 @@ main {
         }        
     }
 
-
-    .debug1 {
-        height: 1500px;
+    .ms_container {
         background-color: #f4f4f6;
     }
 
@@ -352,6 +396,47 @@ main {
             width: 100%;
             height: 100%;
         }
+    }
+
+    .ms_awards {
+        margin-top: 50px;
+
+        .sottotitolo{
+            font-size: 12px;
+            font-weight: 300;
+            margin-bottom: 0px;
+        }
+
+        .award_a {
+            width: 50%;
+            height: 50%;
+            filter: hue-rotate(190deg);
+            margin-left: 50px;
+            opacity: 0.7;
+        }
+
+        .award_b {
+            width: 50%;
+            height: 50%;
+            margin-left: 50px;
+        }
+        
+        .award_c {
+            width: 50%;
+            height: 50%;
+            filter: saturate(3);
+            margin-left: 50px;
+
+        }
+
+        .award_d {
+            width: 50%;
+            height: 50%;
+            filter: hue-rotate(210deg);
+            margin-left: 50px;
+
+        }
+
     }
 
 }
