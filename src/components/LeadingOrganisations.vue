@@ -7,18 +7,21 @@
                 <h1 class="text-center ms_organisations pb-4">Trusted by Leading Organisations</h1>
             </div>
             <div class="col-3">
-                <div class="ms_contenitore_img">
-                    <img src="../assets/images/case-studies-1-1200x1349.jpg" alt="">
+                <div class="ms_contenitore_img position-relative">
+                    <div class="sfondo_uno position-absolute" v-if="!prima" v-on:mouseleave="prima = true"></div>
+                    <img src="../assets/images/case-studies-1-1200x1349.jpg" alt="" v-on:mouseover="prima = false">
                 </div>
             </div>
             <div class="col-3">
-                <div class="ms_contenitore_img">
-                    <img src="../assets/images/case-studies-4-1200x1349.jpg" alt="">
+                <div class="ms_contenitore_img position-relative">
+                    <div class="sfondo_due position-absolute" v-if="!seconda" v-on:mouseleave="seconda = true"></div>
+                    <img src="../assets/images/case-studies-4-1200x1349.jpg" alt="" v-on:mouseover="seconda = false">
                 </div>
             </div>
             <div class="col-3">
-                <div class="ms_contenitore_img">
-                    <img src="../assets/images/case-studies-6-1200x1349.jpg" alt="">
+                <div class="ms_contenitore_img position-relative">
+                    <div class="sfondo_tre position-absolute" v-if="!terza" v-on:mouseleave="terza = true"></div>
+                    <img src="../assets/images/case-studies-6-1200x1349.jpg" alt="" v-on:mouseover="terza = false">
                 </div>
             </div>
         </div>
@@ -89,8 +92,14 @@
 
 <script>
 export default {
-    name: "LeadingOrganisations"
-
+    name: "LeadingOrganisations",
+    data () {
+        return {
+            prima: true,
+            seconda: true,
+            terza: true,
+        };
+    }
 }
 </script>
 
@@ -106,16 +115,37 @@ main {
 
     
     .ms_contenitore_img {
-        background-color: rgba(248, 96, 17, 0.7);
+
+        .sfondo_uno {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(248, 96, 17,);
+            background: linear-gradient(0deg, rgba(248,96,17,0.6175070711878502) 15%, rgba(248,96,17,0.14047625886292014) 67%);
+            top: 0px;
+            left: 0px;
+        }
+
+        .sfondo_due {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(248, 96, 17,);
+            background: linear-gradient(0deg, rgba(248,96,17,0.6175070711878502) 15%, rgba(248,96,17,0.14047625886292014) 67%);
+            top: 0px;
+            left: 0px;
+        }
+
+        .sfondo_tre {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(248, 96, 17,);
+            background: linear-gradient(0deg, rgba(248,96,17,0.6175070711878502) 15%, rgba(248,96,17,0.14047625886292014) 67%);
+            top: 0px;
+            left: 0px;
+        }
 
         img {
             width: 100%;
             height: 100%;
-
-            &:hover {
-                -webkit-mask-image: linear-gradient(black, transparent);
-                mask-image: linear-gradient(black, transparent);
-            }
 
         }
 
