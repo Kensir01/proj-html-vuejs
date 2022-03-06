@@ -57,19 +57,22 @@ main {
     }
 
     div .ms_bottone_secondo{
-    color: white;
-    background-color: #f76210;
-    border: 1px solid #f76210;
-    width: 160px;
-    border-radius: 10px;
-    font-size: 12px;
-    font-weight: 400;
+        color: white;
+        background-color: #f76210;
+        border: 1px solid #f76210;
+        width: 160px;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 400;
     
-        &:hover {
+        &:hover,&:focus,&:active {
             background-color: white;
             color: #f76210;
             border: 1px solid #f76210;
+            outline: none; 
+            box-shadow: none;
         }
+               
     }
 
     div .ms_tag {

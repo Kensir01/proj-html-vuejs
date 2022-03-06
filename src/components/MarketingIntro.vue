@@ -95,10 +95,14 @@ export default {
         padding: 6px 20px;
         border-radius: 7px;
 
-        &:hover{
+        &:hover,&:focus,&:active {
+            outline: none ;
+            box-shadow: none;            
             background-color: transparent;
             color: white;
         }
+        
+
     }
 }
 
@@ -165,10 +169,12 @@ export default {
         width: 285px;
         border-radius: 10px;
         
-        &:hover {
+        &:hover,&:focus,&:active {
             background-color: white;
             color: #f76210;
             border: 1px solid #f76210;
+            outline: none ;
+            box-shadow: none;
         }        
 
     }

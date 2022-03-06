@@ -2,7 +2,7 @@
 <main>
     <div class="row justify-content-center ms_container_nero">
 
-        <div class="col-3 py-5">
+        <div class="col-3 py-5 me-5">
             <div class="contenitore_testo">
                 <h1 class="titolo">Let's Make Things Happen</h1>
                 <p class="sotto_titolo">
@@ -130,10 +130,12 @@ main {
             width: 285px;
             border-radius: 10px;
             
-            &:hover {
+            &:hover,&:active,&:focus {
                 background-color: white;
                 color: #f76210;
                 border: 1px solid #f76210;
+                outline: none ;
+                box-shadow: none;
             }        
 
         }

@@ -110,6 +110,11 @@ main {
             width: 175px;
             height: 35px;
 
+            &:active,&:focus{
+            outline: none ;
+            box-shadow: none;
+            }
+
             p {
                 font-size: 11px;
                 color: #f86011;

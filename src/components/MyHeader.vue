@@ -20,20 +20,29 @@
                             Home
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li v-for="(link, i) in navLinks" :key="i" class="">
+                                    <a href="#"
+                                        class="dropdown-item"
+                                        :class="(activePage == i)">
+                                        {{link}}
+                                    </a>
+                                </li>                           
                             </ul>
-                        </li>                          
+                        </li> 
                     </div>
-  
                     <!-- Secondo dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li v-for="(link, i) in navLinksDue" :key="i" class="">
+                                <a href="#"
+                                    class="dropdown-item"
+                                    :class="(activePage == i)">
+                                    {{link}}
+                                </a>
+                            </li>                           
                         </ul>
                     </li>    
                     <!-- Resto di link header -->
@@ -46,7 +55,7 @@
                 </div>
                 </div>
             </div>
-        </nav>       
+        </nav>              
     </div>
 
 </header>
@@ -54,7 +63,15 @@
 
 <script>
 export default {
-    name: "MyHeader"
+    name: "MyHeader",
+    data() {
+        return {
+            navLinks: ['Home', 'About', 'Services', 'Showcase', 'Blog', 'Contact'],
+            navLinksDue: ['Never', 'Gonna', 'Give', 'You', 'Up'],
+            activePage: 0,
+        }
+    }
+
 }
 </script>
 
@@ -93,11 +110,14 @@ header{
         border-radius: 10px;
 
 
-        &:hover{
+        &:hover,&:focus,&:active {
+            outline: none ;
+            box-shadow: none;            
             background-color: #f76210;
             border: 1px solid rgba(247,98,16, 0.1);
-           
         }
+        
+
     }    
 }
 

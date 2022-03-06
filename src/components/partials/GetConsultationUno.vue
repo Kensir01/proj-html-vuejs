@@ -65,11 +65,15 @@ main {
     font-size: 12px;
     font-weight: 400;
 
-        &:hover {
+        &:hover,&:focus,&:active {
             background-color: white;
             color: #f76210;
             border: 1px solid #f76210;
+            outline: none; 
+            box-shadow: none;
         }
+        
+      
     }
 
     div .ms_tag {

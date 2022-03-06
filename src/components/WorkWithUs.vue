@@ -380,11 +380,13 @@ main {
             width: 180px;
             border-radius: 10px;
 
-            &:hover {
+            &:hover,&:focus,&:active {
                 background-color: white;
                 color: #f76210;
                 border: 1px solid #f76210;
-            }       
+                outline: none; 
+                box-shadow: none;
+            }
         }
     }
 
