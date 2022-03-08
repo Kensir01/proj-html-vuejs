@@ -26,7 +26,6 @@ export default {
       footLinks: ['Marketing Plan', 'Sales Development', 'Digital Marketing', 'Pricing', 'Why Us', 'Case Studies'],
       footLinksDue: ['Learning Center', 'Video Tutorials', 'Customers', 'Blog'],
       footLinksTre: ['Who We Are', 'Contact Us', 'Carrers'], 
-      activePage: 0,
     }
   }
 }

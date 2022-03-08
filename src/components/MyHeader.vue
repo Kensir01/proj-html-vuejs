@@ -21,9 +21,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li v-for="(link, i) in navLinks" :key="i" class="">
-                                    <a href="#"
-                                        class="dropdown-item"
-                                        :class="(activePage == i)">
+                                    <a href="#" class="dropdown-item">
                                         {{link}}
                                     </a>
                                 </li>                           
@@ -37,9 +35,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li v-for="(link, i) in navLinksDue" :key="i" class="">
-                                <a href="#"
-                                    class="dropdown-item"
-                                    :class="(activePage == i)">
+                                <a href="#" class="dropdown-item">
                                     {{link}}
                                 </a>
                             </li>                           

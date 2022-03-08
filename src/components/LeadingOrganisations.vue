@@ -6,80 +6,12 @@
             <div class="col-12">
                 <h1 class="text-center ms_organisations pb-4">Trusted by Leading Organisations</h1>
             </div>
-            <div class="col-3">
-                <div class="ms_contenitore_img position-relative">
-                    <div class="sfondo_uno position-absolute" v-if="!prima" v-on:mouseleave="prima = true"></div>
-                    <img src="../assets/images/case-studies-1-1200x1349.jpg" alt="" v-on:mouseover="prima = false">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="ms_contenitore_img position-relative">
-                    <div class="sfondo_due position-absolute" v-if="!seconda" v-on:mouseleave="seconda = true"></div>
-                    <img src="../assets/images/case-studies-4-1200x1349.jpg" alt="" v-on:mouseover="seconda = false">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="ms_contenitore_img position-relative">
-                    <div class="sfondo_tre position-absolute" v-if="!terza" v-on:mouseleave="terza = true"></div>
-                    <img src="../assets/images/case-studies-6-1200x1349.jpg" alt="" v-on:mouseover="terza = false">
-                </div>
-            </div>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-3">
-                <div class="ms_contenitore_txt pt-4">
-                    <p>How Spaces attracted five million visitors by improving the content</p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="ms_contenitore_txt pt-4">
-                    <p>Creativity helped Hemisferio to increase their brand reach vertically</p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="ms_contenitore_txt pt-4">
-                    <p>How DigitalBox used AI-powered data insight to boost sales</p>
-                </div>
-            </div>
+        <div class="row row-cols-4 justify-content-center">
+            <LeadingCard v-for="(card, i) in cardsData" :key="i" :cardData="card" />
         </div>
-
-        <div class="row justify-content-center">
-            <div class="col-3">
-                <div class="ms_contenitore_numero ">
-                    <p>200%</p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="ms_contenitore_numero ">
-                    <p>10x</p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="ms_contenitore_numero ">
-                    <p>3-year</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-3">
-                <div class="ms_contenitore_sottotitolo ">
-                    <p>Higher revenue from digital</p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="ms_contenitore_sottotitolo ">
-                    <p>Sales increase with the same ad spend</p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="ms_contenitore_sottotitolo ">
-                    <p>Partnership with Avada Consultant</p>
-                </div>
-            </div>
-        </div>
-
+        
         <div class="row py-5">
             <div class="col-12 text-center">
                 <a class="btn btn-primary ms_bottone_secondo" href="#" role="button" disabled>Read More Case Studies</a>
@@ -89,15 +21,38 @@
     </div>
 </main>
 </template>
-
 <script>
+
+import LeadingCard from './LeadingCard.vue'
+
 export default {
     name: "LeadingOrganisations",
+    components: {
+        LeadingCard
+    },
     data () {
         return {
-            prima: true,
-            seconda: true,
-            terza: true,
+            cardsData: [
+                {
+                    img:'case-studies-1-1200x1349.jpg',
+                    title: 'How Spaces attracted five million visitors by improving the content',
+                    data: '200%',
+                    subtext: 'Higher revenue from digital'
+                },
+                {
+                    img:'case-studies-4-1200x1349.jpg',
+                    title: 'Creativity helped Hemisferio to increase their brand reach vertically',
+                    data: '10x',
+                    subtext: 'Sales increase with the same ad spend'
+                },
+                {
+                    img:'case-studies-6-1200x1349.jpg',
+                    title: 'How DigitalBox used AI-powered data insight to boost sales',
+                    data: '3-year',
+                    subtext: 'Partnership with Avada Consultant'
+                },
+
+            ]
         };
     }
 }
@@ -114,66 +69,6 @@ main {
     }
 
     
-    .ms_contenitore_img {
-
-        .sfondo_uno {
-            width: 100%;
-            height: 100%;
-            background-color: rgba(248, 96, 17,);
-            background: linear-gradient(0deg, rgba(248,96,17,0.6175070711878502) 15%, rgba(248,96,17,0.14047625886292014) 67%);
-            top: 0px;
-            left: 0px;
-        }
-
-        .sfondo_due {
-            width: 100%;
-            height: 100%;
-            background-color: rgba(248, 96, 17,);
-            background: linear-gradient(0deg, rgba(248,96,17,0.6175070711878502) 15%, rgba(248,96,17,0.14047625886292014) 67%);
-            top: 0px;
-            left: 0px;
-        }
-
-        .sfondo_tre {
-            width: 100%;
-            height: 100%;
-            background-color: rgba(248, 96, 17,);
-            background: linear-gradient(0deg, rgba(248,96,17,0.6175070711878502) 15%, rgba(248,96,17,0.14047625886292014) 67%);
-            top: 0px;
-            left: 0px;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-
-        }
-
-
-    }
-
-    .ms_contenitore_txt{
-        border: none;
-        border-bottom: 1px dashed rgba(128, 128, 128, 0.4);
-
-        p {
-        font-size: 24px;
-        font-weight: 00;
-        }
-    }
-
-    .ms_contenitore_numero p{
-        font-size: 28px;
-        font-weight: 600;
-        padding-top: 10px;
-    }
-
-    .ms_contenitore_sottotitolo p{
-        font-size: 10px;
-        font-weight: 300;
-        margin-top: -18px;
-    }
-
     div .ms_bottone_secondo{
         color: white;
         background-color: #f76210;

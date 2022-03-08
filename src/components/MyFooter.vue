@@ -42,9 +42,7 @@
         <h5>Services</h5>
         <ul class="nav flex-column">
             <li v-for="(link, i) in footLinks" :key="i" class="nav-item mb-2">
-                <a href="#"
-                class="nav-link p-0 text-muted"
-                :class="(activePage == i)">
+                <a href="#" class="nav-link p-0 text-muted">
                 {{link}}</a>
             </li>        
         </ul>
@@ -54,9 +52,7 @@
         <h5>Resources</h5>
         <ul class="nav flex-column">
             <li v-for="(link, i) in footLinksDue" :key="i" class="nav-item mb-2">
-                <a href="#"
-                class="nav-link p-0 text-muted"
-                :class="(activePage == i)">
+                <a href="#" class="nav-link p-0 text-muted">
                 {{link}}</a>
             </li>
         </ul>
@@ -66,9 +62,7 @@
         <h5>Company</h5>
         <ul class="nav flex-column">
             <li v-for="(link, i) in footLinksTre" :key="i" class="nav-item mb-2">
-                <a href="#"
-                class="nav-link p-0 text-muted"
-                :class="(activePage == i)">
+                <a href="#" class="nav-link p-0 text-muted">
                 {{link}}</a>
             </li>
         </ul>
