@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <MyHeader />    
+    <MyHeader :navLinks="navLinks" :navLinksDue="navLinksDue"/>    
     <MyMain />
-    <MyFooter />
+    <MyFooter :footLinks="footLinks" :footLinksDue="footLinksDue" :footLinksTre="footLinksTre"/>
   </div>
 </template>
 
@@ -18,6 +18,16 @@ export default {
     MyHeader,
     MyMain,
     MyFooter,
+  },
+  data () {
+    return {
+      navLinks: ['Home', 'About', 'Services', 'Showcase', 'Blog', 'Contact'],
+      navLinksDue: ['Never', 'Gonna', 'Give', 'You', 'Up'],
+      footLinks: ['Marketing Plan', 'Sales Development', 'Digital Marketing', 'Pricing', 'Why Us', 'Case Studies'],
+      footLinksDue: ['Learning Center', 'Video Tutorials', 'Customers', 'Blog'],
+      footLinksTre: ['Who We Are', 'Contact Us', 'Carrers'], 
+      activePage: 0,
+    }
   }
 }
 </script>

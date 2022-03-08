@@ -53,7 +53,7 @@
       <div class="col-1 ms_testopiccolo mx-5">
         <h5>Resources</h5>
         <ul class="nav flex-column">
-            <li v-for="(link, i) in footLinks" :key="i" class="nav-item mb-2">
+            <li v-for="(link, i) in footLinksDue" :key="i" class="nav-item mb-2">
                 <a href="#"
                 class="nav-link p-0 text-muted"
                 :class="(activePage == i)">
@@ -88,15 +88,17 @@
 <script>
 export default {
     name:"MyFooter",
-    data() {
-        return {
-            footLinks: ['Marketing Plan', 'Sales Development', 'Digital Marketing', 'Pricing', 'Why Us', 'Case Studies'],
-            footLinksDue: ['Learning Center', 'Video Tutorials', 'Customers', 'Blog'],
-            footLinksTre: ['Who We Are', 'Contact Us', 'Carrers'],
-            activePage: 0,
-            isHidden: true
-        }
-    }}
+        data() {
+            return {
+                isHidden: true
+            }
+        },    
+        props: {
+            'footLinks': Array,
+            'footLinksDue': Array,
+            'footLinksTre': Array,
+        },
+    }
 </script>
 
 <style scoped lang="scss">

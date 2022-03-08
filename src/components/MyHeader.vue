@@ -64,12 +64,9 @@
 <script>
 export default {
     name: "MyHeader",
-    data() {
-        return {
-            navLinks: ['Home', 'About', 'Services', 'Showcase', 'Blog', 'Contact'],
-            navLinksDue: ['Never', 'Gonna', 'Give', 'You', 'Up'],
-            activePage: 0,
-        }
+    props: {
+        'navLinks': Array,
+        'navLinksDue': Array,
     }
 
 }
